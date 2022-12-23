@@ -1,0 +1,145 @@
+@use 'variables';
+@use 'mixinsfunc';
+
+/* -- RESET -- */
+
+
+
+* {
+
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: variables.$color1;
+    background: linear-gradient(180deg, variables.$color1 55%, variables.$color2 100%);
+    height: 100vh;
+}
+
+/* -- Elements -- */
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a  { 
+   text-decoration: none !important; 
+}
+
+.show-name{
+    color: yellow
+}
+
+.delete-wish {
+    float: right;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    background-color: variables.$color3;
+    padding: 0px 5px;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -- INDEX.html -- */
+
+.intro {
+    width: 60%;
+    max-width: 400px;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    align-content: center;
+
+    &__name {
+        transition: 0.6s;
+        color: #0f8a5f !important;
+        font-family: variables.$font2;
+
+    }
+
+    &__name:focus {
+        border: 2px solid variables.$color3;
+        outline: none;
+    }
+
+    &__button {
+        @include mixinsfunc.button-style;
+        @include mixinsfunc.shadow-style;
+        transition: 0.5s;
+    }
+
+    &__button:hover {
+        transform: scale(1.1)
+    }
+
+}
+
+/* -- WISHLIST -- */
+
+.wishlist {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+    overflow: hidden;
+
+    &__title, &__welcome {
+        text-align: center;
+        color: white;
+    }
+
+    &__title {
+
+        font-family: variables.$font1;
+        font-size: 3rem;
+        background: repeating-linear-gradient(
+          45deg,
+          variables.$color3,
+          variables.$color3 30px,
+          white 30px,
+          white 60px
+        );
+        background-clip: text;
+        color: transparent;
+
+        -webkit-background-clip: text;
+        animation: 40s linear 0s infinite move;
+        text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.241);
+        @keyframes move {
+            from {
+              background-position: 0px;
+            }
+            to {
+              background-position: 1000px;
+            }
+        }
+    }
+
+    &__welcome {
+        font-family: variables.$font2;
+    }
+
+    &__area {
+        height: 150px;
+        color: #0f8a5f;
+        font-family: variables.$font2;
+        resize: none;
+    }
+
+    &__area:focus {
+        border: 2px solid variables.$color3;
+        outline: none;
+    }
+
+    &__button {
+        @include mixinsfunc.button-style;
+        @include mixinsfunc.shadow-style;
+    }
+
+    &__element {
+        font-family: variables.$font2;
+        color: variables.$color2;
+    }
+}

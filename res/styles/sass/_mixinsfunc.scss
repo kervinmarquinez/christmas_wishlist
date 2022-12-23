@@ -1,0 +1,14 @@
+@use 'variables';
+
+@mixin shadow-style {
+    -webkit-box-shadow: 6px 7px 21px -12px rgba(0,0,0,0.57);
+    -moz-box-shadow: 6px 7px 21px -12px rgba(0,0,0,0.57);
+    box-shadow: 6px 7px 21px -12px rgba(0,0,0,0.57);
+}
+
+@mixin button-style {
+    background-color: variables.$color3;
+    font-family: variables.$font1;
+    border: none;
+    border-radius: 0.5rem;
+}
