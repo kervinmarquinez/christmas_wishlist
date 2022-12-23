@@ -27,10 +27,10 @@ A small project similar as a To-do list. Created in 2 days, I wanted to make an 
 
 ## Screenshots
 
-![Example screenshot](./res/images/Screenshot1.PNG)
+![Example screenshot](./res/img/Screenshot1.png)
 <br/>
 <br/>
-![Example screenshot](./res/images/Screenshot2.PNG)
+![Example screenshot](./res/img/Screenshot2.png)
 
 
 ## Contact
