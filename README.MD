@@ -27,7 +27,7 @@ A small project similar as a To-do list. Created in 2 days, I wanted to make an 
 
 ## Example
 
-- [Click here](https://kervinmarquinez.github.io/footure/src/index.html) to see the live example.
+- [Click here](https://kervinmarquinez.github.io/christmas_wishlist/src/index.html) to see the live example.
 
 ## Screenshots
 
