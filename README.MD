@@ -25,6 +25,10 @@ A small project similar as a To-do list. Created in 2 days, I wanted to make an 
 - LocalStorage to keep saved your wishes.
 - You have to fill the initial form to continue and then a custom welcome message will appear.
 
+## Example
+
+- [Click here](https://kervinmarquinez.github.io/footure/src/index.html) to see the live example.
+
 ## Screenshots
 
 ![Example screenshot](./res/img/Screenshot1.png)
